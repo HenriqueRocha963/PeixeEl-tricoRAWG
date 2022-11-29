@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+    <script src="buscar.js"></script>
+    <title>Peixe elétrico</title>
+</head>
+
+<body onload="CarregarAPI()">
+    <header class="header">
+        <div class="cabecalho">
+            <a href="#"><img src="image/Logo.png" alt="Logomarca"></a>
+
+            <nav class="nav">
+                <ul class="menu">
+                    <li><a href="#destaques">Destaques</a></li>
+                    <li><a href="#trailers">Explorar</a></li>
+                    <li><a href="#plataforma">Plataforma</a></li>
+                    <li><a href="#publisher">Favoritos</a></li>
+                </ul>
+                <form action="" method="get">
+                    <input autocomplete="off" onclick="ExibirLista()" oninput="Enviarresp()" type="search" list="jogospossiveis" placeholder="Navegue..." id="buscar">
+                    <datalist id="jogospossiveis">
+                    </datalist>
+                    <input type="submit" hidden />
+                </form>
+            </nav>
+
+        </div>
+    </header>
+
+    <section class="section1">
+        <div>
+            <h1 id="destaques" ">DESTAQUES</h1>
+            <ul class="carousel" id="carousel">
+
+            </ul>
+            <div class="destaque_navballs">
+                <a href="#D1">
+                    <div class="destaque_ball destaque_ball1" id="Db1" onclick="navballs1()"></div>
+                </a>
+                <a href="#D2">
+                    <div class="destaque_ball" id="Db2" onclick="navballs2()"></div>
+                </a>
+                <a href="#D3">
+                    <div class="destaque_ball" id="Db3" onclick="navballs3()"></div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+    <section class="section2">
+        <div class="container_lancamento">
+            <div class="jogos-menu">
+                <h1 id="trailers">EXPLORAR</h1>
+                <div>
+                    <select name="Ordenar">
+                        <option value="valor1" selected>Mais antigos</option>
+                        <option value="valor2">Mais novos</option>
+                        <option value="valor3">A a Z</option>
+                    </select>
+
+                    <select name="Genero">
+                        <option value="valor1" selected> Ação</option>
+                        <option value="valor2">Terror</option>
+                        <option value="valor3">Arcade</option>
+                    </select>
+                </div>
+            </div>
+            <div class="grid_lancamento" id="grid_exp">
+            </div>
+            <div class="flexbutton">
+                <button class="button">
+                    <img src="image/mais.png" alt="mais">
+                    <p>Carregar mais lançamentos</p>
+                </button>
+            </div>
+
+        </div>
+    </section>
+    <section class="section3">
+        <div class="container_plataforma">
+            <h1 id="titulo">PLATAFORMAS</h1>
+            <div class="grid_plataforma" id="plataforma">
+            </div>
+            <div class="flexbutton">
+                <button class="button">
+                    <img src="image/mais.png" alt="mais">
+                    <p>Carregar mais lançamentos</p>
+                </button>
+            </div>
+        </div>
+    </section>
+    <section class="section4">
+        <div class="container_plataforma" id="publisher">
+            <h1 id="titulo">FAVORITOS</h1>
+            <div class="grid_plataforma" id="grid_plataforma">
+
+            </div>
+            <div class="flexbutton">
+                <button class="button">
+                    <img src="image/mais.png" alt="mais">
+                    <p>Carregar mais lançamentos</p>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="section5">
+        <div class="container_sobre">
+            <div class="all-pre-footer">
+                <div class="sobre">
+                    <h1>SOBRE</h1>
+                    <p>A Peixe eletrônico é uma empresa voltada a consoles e games, principalmente os clássicos. Sua
+                        ideia surgiu a partir de uma brecha no mercado, que gerava uma dificuldade em encontrar os
+                        vídeo-games clássicos
+                        , principalmente os da nintendo. A partir disso foi criada esta loja, que além de
+                        disponibilizar
+                        consoles e jogos, também disponibiliza uma variedade de conteúdos ligados ao mundo Nerd.
+                    </p>
+
+                </div>
+                <div class="right-group">
+                    <div>
+                        <div class="editorial">
+                            <h1>EDITORIAL</h1>
+                            <ul>
+                                <li>Redação:Henrique Martins</li>
+                                <li>Pesquisa:Henrique Martins</li>
+                                <li>Gerente geral:Henrique Martins</li>
+                            </ul>
+
+                        </div>
+                        <div class="redes">
+                            <h1>REDES SOCIAIS</h1>
+                            <img src="image/facebook.png" alt="facebook">
+                            <img src="image/twitter.png" alt="Twitter">
+                            <img src="image/instagram.png" alt="Instagram">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <footer class="footer">
+        <div class="copyright">
+            <h3>© Copyright 2022 - Aluno: Henrique Martins da Rocha - Puc Minas</h3>
+
+        </div>
+        <div class="flogo">
+            <img src="image/Logo.png" alt="Logomarca">
+
+        </div>
+
+
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+    <script src="buscar.js"></script>
+</head>
+
+<body onload="ExibirJogo_detalhes(window.location.search)">
+    <header class="header">
+        <div class="cabecalho">
+            <a href="index.html"><img src="image/Logo.png" alt="Logomarca"></a>
+
+            <nav class="nav">
+                <ul class="menu">
+                    <li><a href="index.html#destaques">Destaques</a></li>
+                    <li><a href="index.html#trailers">Lançamentos</a></li>
+                    <li><a href="index.html#plataforma">Plataforma</a></li>
+                    <li><a href="index.html#publisher">Publisher</a></li>
+                </ul>
+                <form action="" method="get">
+                    <input autocomplete="off" onclick="ExibirLista()" oninput="Enviarresp()" type="search" list="jogospossiveis" placeholder="Navegue..." id="buscar">
+                    <datalist id="jogospossiveis">
+                    </datalist>
+                    <input type="submit" hidden />
+                </form>
+            </nav>
+
+        </div>
+    </header>
+    <section class="sec_detalhes1" id="sec_detalhes1">
+       
+    </section>
+    <section class="sec_detalhes2">
+        <div class="detalhes_container">
+            <h2>Screenshots</h2>
+            <div class="grid_images_detalhes" id="grid_images_detalhes">
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="copyright">
+            <h3>© Copyright 2022 - Aluno: Henrique Martins da Rocha - Puc Minas</h3>
+
+        </div>
+        <div class="flogo">
+            <img src="image/Logo.png" alt="Logomarca">
+
+        </div>
+
+
+    </footer>
+
+</body>
+
+</html>
